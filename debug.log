@@ -1,0 +1,5 @@
+[1212/132500.761:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1212/132510.661:ERROR:process_info.cc(359)] UncheckedAllocate
+[1212/132510.679:ERROR:crash_report_database_win.cc(455)] unexpected header
+[1212/133731.297:ERROR:process_info.cc(359)] UncheckedAllocate
+[1212/133731.424:ERROR:process_info.cc(359)] UncheckedAllocate
