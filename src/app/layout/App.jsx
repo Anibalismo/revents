@@ -1,10 +1,12 @@
-import './styles.css';
+import EventDashboard from '../../features/events/eventDashboard/EventDashboard';
+import NavBar from '../../features/nav/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola</h1>
-    </div>
+    <>
+      <NavBar />
+      <EventDashboard />
+    </>
   );
 }
 
