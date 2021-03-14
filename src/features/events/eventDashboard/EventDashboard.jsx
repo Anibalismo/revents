@@ -1,15 +1,20 @@
-import React  from "react";
 import { Grid, Container } from "semantic-ui-react";
+import EventList from './EventList';
+import EventForm from '../eventForm/EventForm'
+import {sampleData} from '../../../app/api/sampleData.js'
+import {useState} from 'react';
 
-export default function EventDashboard() {
+export default function EventDashboard({formOpen, setFormOpen}) {
+    const [events, setEvents] = useState(sampleData);
     return(
         <Container className='main'>
             <Grid >
                 <Grid.Column width={10}>
-                    <h2>hola</h2>
+                    <EventList events={events}/>
                 </Grid.Column>
                 <Grid.Column width={6}>
-                    <h2>hola2</h2>
+                    {formOpen && <EventForm setFormOpen={setFormOpen}/>}
+                    
                 </Grid.Column>
             </Grid>
         </Container>

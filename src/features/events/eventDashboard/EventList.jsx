@@ -1,7 +1,11 @@
-import React from "react";
+import EventListItem from './EventListItem'
 
-export default function EventList(){
+export default function EventList({events}){
   return(
-    <h1>event list</h1>
+    <>
+    {events.map( event => (
+      <EventListItem event={event} key={event.id}/>
+    ))}
+    </>
   )
 }
